@@ -1178,7 +1178,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ` + currentVideos.map(video => `
         <div class="user-bookmark-card" data-video-id="${video.id}">
           <div class="user-bm-thumb-wrap">
-            <img src="${video.thumb}" alt="${escapeHtml(video.title)}" class="user-bm-thumb" onerror="this.src='assets/yt_thumb_1.jpg'">
+            <img src="${video.thumb}" alt="${escapeHtml(video.title)}" class="user-bm-thumb" onerror="this.src='https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/yt_thumb_1.jpg'">
           </div>
           <div class="user-bm-content">
             <h4 class="user-bm-title" title="${escapeHtml(video.title)}">${escapeHtml(video.title)}</h4>
@@ -1207,7 +1207,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return `
           <div class="user-bookmark-card" data-video-id="${video.id}">
             <div class="user-bm-thumb-wrap">
-              <img src="${video.thumb}" alt="${escapeHtml(video.title)}" class="user-bm-thumb" onerror="this.src='assets/yt_thumb_1.jpg'">
+              <img src="${video.thumb}" alt="${escapeHtml(video.title)}" class="user-bm-thumb" onerror="this.src='https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/yt_thumb_1.jpg'">
               ${isBookmarked ? `<span style="position: absolute; top: 8px; right: 8px; background: rgba(99,102,241,0.9); color: #fff; font-size: 10px; font-weight: 800; padding: 2px 7px; border-radius: 6px;"><i class="fa-solid fa-bookmark"></i> Saved</span>` : ''}
             </div>
             <div class="user-bm-content">
@@ -1730,7 +1730,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const customLinkTitle = creatorResourceTitleInput?.value?.trim() || `${title.slice(0, 30)} Resources`;
       const customLinkUrl = creatorResourceUrlInput?.value?.trim() || '';
 
-      const thumbUrl = detectedVideoThumb || (videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : 'assets/hero_characters.jpg');
+      const thumbUrl = detectedVideoThumb || (videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : 'https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.jpg');
       const cleanUrl = videoId ? `https://youtube.com/watch?v=${videoId}` : (rawUrl.startsWith('http') ? rawUrl : 'https://youtube.com/@ahantech');
 
       const videoResources = [];
@@ -2266,7 +2266,7 @@ Date: ${new Date().toLocaleString()}`;
       return `
         <article class="yt-shelf-card" data-category="${video.category || ''}" data-video-id="${video.id}">
           <div class="yt-thumb-box">
-            <img src="${video.thumb}" alt="${escapeHtml(video.title)}" class="yt-thumb-img" loading="lazy" decoding="async" onerror="this.src='assets/yt_thumb_1.jpg'">
+            <img src="${video.thumb}" alt="${escapeHtml(video.title)}" class="yt-thumb-img" loading="lazy" decoding="async" onerror="this.src='https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/yt_thumb_1.jpg'">
             <span class="yt-time-badge">${video.duration || '5:00'}</span>
             <button type="button" class="btn-card-bookmark ${isBookmarked ? 'bookmarked' : ''}" data-video-id="${video.id}" title="${isBookmarked ? 'Remove from Saved' : 'Save to My User Panel'}">
               <i class="${isBookmarked ? 'fa-solid' : 'fa-regular'} fa-bookmark"></i>
@@ -2777,7 +2777,7 @@ Date: ${new Date().toLocaleString()}`;
       const ytId = (typeof extractYouTubeId === 'function') ? (extractYouTubeId(v.url || '') || extractYouTubeId(v.thumb || '')) : '';
       const thumbUrl = v.thumb && !v.thumb.includes('placeholder') && !v.thumb.includes('thumb_3d')
         ? v.thumb 
-        : (ytId ? `https://img.youtube.com/vi/${ytId}/hqdefault.jpg` : 'assets/hero_characters.jpg');
+        : (ytId ? `https://img.youtube.com/vi/${ytId}/hqdefault.jpg` : 'https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.jpg');
 
       items.push({
         id: v.id,
@@ -3169,7 +3169,7 @@ Date: ${new Date().toLocaleString()}`;
           currentVideos = data.map(cloudVid => ({
             id: cloudVid.id,
             title: cloudVid.title,
-            thumb: cloudVid.thumb || 'assets/hero_characters.jpg',
+            thumb: cloudVid.thumb || 'https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.jpg',
             desc: cloudVid.description || '',
             duration: cloudVid.duration || 'HD Video',
             views: cloudVid.views || 'New • Just now',

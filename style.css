@@ -3,7 +3,8 @@
    ========================================================================== */
 @font-face {
   font-family: 'Flexing';
-  src: url('assets/fonts/Flexing-Black.otf') format('opentype');
+  src: url('https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/Flexing-Black.otf') format('opentype'),
+       url('assets/fonts/Flexing-Black.otf') format('opentype');
   font-weight: 800 900;
   font-style: normal;
   font-display: swap;
@@ -11,7 +12,8 @@
 
 @font-face {
   font-family: 'Flexing';
-  src: url('assets/fonts/Flexing-Bold.otf') format('opentype');
+  src: url('https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/Flexing-Bold.otf') format('opentype'),
+       url('assets/fonts/Flexing-Bold.otf') format('opentype');
   font-weight: 600 700;
   font-style: normal;
   font-display: swap;
@@ -19,7 +21,8 @@
 
 @font-face {
   font-family: 'Flexing';
-  src: url('assets/fonts/Flexing-Regular.otf') format('opentype');
+  src: url('https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/Flexing-Regular.otf') format('opentype'),
+       url('assets/fonts/Flexing-Regular.otf') format('opentype');
   font-weight: 400 500;
   font-style: normal;
   font-display: swap;
