@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahan Tech | Where Content Meets Cool (@ahantech)</title>
+  <meta name="description" content="Official portfolio for Ahan Tech (@ahantech). Free AI coding agent scripts, developer tutorials, Alpha 2026 Telegram community, and brand sponsorships.">
+  <meta name="theme-color" content="#251715">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  
+  <!-- SVG Brand Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%237c3aed'/%3E%3Cstop offset='100%25' stop-color='%23db2777'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='26' fill='url(%23g)'/%3E%3Ctext x='50' y='64' font-family='Arial, sans-serif' font-size='42' font-weight='900' fill='white' text-anchor='middle'%3EAT%3C/text%3E%3C/svg%3E">
+  
+  <!-- Open Graph & Social Sharing -->
+  <meta property="og:site_name" content="Ahan Tech">
+  <meta property="og:title" content="Ahan Tech | Where Content Meets Cool (@ahantech)">
+  <meta property="og:description" content="Explore free AI coding workflows, Claude Code scripts, PDF library, and Alpha 2026 Telegram resources.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero_characters.jpg">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ahantech">
+  <meta name="twitter:title" content="Ahan Tech | Where Content Meets Cool">
+  <meta name="twitter:description" content="Where Content Meets Cool • Free AI coding scripts & developer vault.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans (Clean, Modern Tech UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet (Cache-Busted v18.3 - Full GPU Speed Optimization) -->
+  <link rel="stylesheet" href="style.css?v=18.3">
+</head>
+<body>
+
+  <!-- Outer Purple Environment Frame -->
+  <div class="app-viewport">
+    
+    <!-- Smooth Dual-Layer Crossfade Viewport Backgrounds -->
+    <div class="app-viewport-bg active" id="viewportBgA"></div>
+    <div class="app-viewport-bg" id="viewportBgB"></div>
+
+    <!-- Background Ambient Glow Orbs -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Main Website App Card Container -->
+    <main class="showcase-card" id="mainWebsiteApp">
+      
+      <!-- Top Navigation Header -->
+      <header class="app-header" id="appHeader">
+        <!-- Left Cluster: App Drawer & Official Channel Badge -->
+        <div class="header-left-cluster">
+          <!-- Top Left: App Drawer / Menu Grid Button -->
+          <button class="icon-btn-grid" id="gridMenuBtn" aria-label="Open Creator Hub Menu" title="Channel Shortcuts & Hub">
+            <span class="grid-dot"></span>
+            <span class="grid-dot"></span>
+            <span class="grid-dot"></span>
+            <span class="grid-dot"></span>
+          </button>
+
+          <!-- Official Channel Quick Brand / Sub Count Badge -->
+          <a href="https://youtube.com/@ahantech?si=lUA9TFK3VSPFafw8" target="_blank" rel="noopener" class="channel-brand-pill" title="Visit Ahan Tech on YouTube">
+            <div class="brand-yt-icon-box">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="brand-info-stack">
+              <div class="brand-name-row">
+                <span class="brand-name">Ahan Tech</span>
+                <i class="fa-solid fa-circle-check brand-verify-badge" title="Verified YouTube Creator"></i>
+              </div>
+              <div class="brand-meta-sub">
+                <span class="brand-handle">@ahantech</span>
+                <span class="brand-subs-chip">Developer Hub</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Top Right: Navigation Capsule -->
+        <nav class="nav-pill" id="mainNavPill">
+          <button type="button" class="nav-link active" id="navHomeLink">
+            <i class="fa-solid fa-house-chimney"></i>
+            <span>Home</span>
+          </button>
+          <a href="#resources" class="nav-link" id="navResourcesLink">
+            <i class="fa-solid fa-play"></i>
+            <span>Videos & Vault</span>
+          </a>
+          
+          <span class="nav-separator">|</span>
+
+          <!-- Collab / Sponsor Pill Button -->
+          <button type="button" class="nav-auth-btn" id="collabBtn" title="Brand Deals & Collaborations">
+            <i class="fa-solid fa-handshake"></i>
+            <span>Collab / Sponsor</span>
+          </button>
+
+          <!-- Dynamic Auth & User Area -->
+          <div class="nav-auth-group" id="navAuthGroup">
+            <!-- Populated dynamically by app.js -->
+          </div>
+        </nav>
+      </header>
+
+      <!-- Inner Hero Stage (Golden Amber Container) -->
+      <section class="hero-stage" id="hero">
+        
+        <!-- Smooth Dual-Layer Crossfade Hero Stage Backgrounds -->
+        <div class="hero-stage-bg active" id="heroStageBgA"></div>
+        <div class="hero-stage-bg" id="heroStageBgB"></div>
+
+        <!-- Soft Translucent Accent Corner Bubbles -->
+        <div class="stage-bubble bubble-top-right"></div>
+        <div class="stage-bubble bubble-bottom-left"></div>
+
+        <!-- Left Side: Anime Streetwear Creator Duo -->
+        <div class="characters-container">
+          <div class="characters-crop-frame">
+            <img 
+              src="assets/hero_characters.jpg" 
+              alt="Ahan Tech creators in stylish streetwear hoodies" 
+              class="hero-art-img"
+              id="heroArtImg"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </div>
+          
+          <!-- Floating Channel Badges -->
+          <div class="floating-tag tag-left">
+            <i class="fa-brands fa-youtube" style="color: #ff0033;"></i>
+            <span>@ahantech Official</span>
+          </div>
+          <div class="floating-tag tag-right">
+            <i class="fa-brands fa-telegram" style="color: #0088cc;"></i>
+            <span>Alpha Community</span>
+          </div>
+        </div>
+
+        <!-- Right Side: Headline and Floating Controls -->
+        <div class="hero-content-area">
+          
+          <!-- Big Chunky Hero Title -->
+          <div class="headline-container">
+            <h1 class="hero-title" id="mainTitle">
+              <span>Where</span>
+              <span>Content</span>
+              <span class="hero-line-meets">Meets <span class="hero-highlight-word">Cool</span></span>
+            </h1>
+          </div>
+
+          <!-- Bottom Floating Violet Action Card -->
+          <div class="action-pill-card" id="actionCard">
+            
+            <!-- Top Controls Row -->
+            <div class="action-card-top-row">
+              <div class="quick-icons-group">
+                <!-- Resource Filter Button -->
+                <button class="white-round-btn" id="filterBtn" title="Filter Resources" aria-label="Filter Resources">
+                  <i class="fa-solid fa-sliders"></i>
+                </button>
+                <!-- Color Mood Palette Switcher -->
+                <button class="white-round-btn" id="paletteBtn" title="Switch Theme Mood" aria-label="Switch Theme Mood">
+                  <i class="fa-solid fa-palette"></i>
+                </button>
+              </div>
+
+              <span class="action-separator">|</span>
+
+              <!-- Live Search Capsule Input -->
+              <div class="search-capsule-wrapper">
+                <input 
+                  type="text" 
+                  class="search-input" 
+                  id="searchInput" 
+                  placeholder="Search channel videos & resources... (e.g. Azure, Codex)" 
+                  autocomplete="off"
+                  aria-label="Search channel videos"
+                />
+                <button type="button" class="search-clear-btn" id="searchClearBtn" aria-label="Clear search" style="display: none;" title="Clear search">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+                <button class="search-submit-btn" id="searchSubmitBtn" aria-label="Submit search" title="Search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <!-- Instant Autocomplete Dropdown -->
+                <div class="search-dropdown" id="searchDropdown" role="listbox" aria-label="Search suggestions">
+                  <!-- Populated dynamically by app.js -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Sub-Row: Text & Explore Button -->
+            <div class="action-card-bottom-row">
+              <div class="action-copy-box">
+                <p class="action-headline">For Free Video<br>Resources</p>
+              </div>
+
+              <span class="action-sub-separator">|</span>
+
+              <a href="#resources" class="btn-explore" id="exploreBtn">
+                <span>EXPLORE</span>
+                <i class="fa-solid fa-arrow-down-long"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ==================================================================
+           SECTION 1: VIDEOS & USED RESOURCES VAULT (YOUTUBE SHELF IN WEBSITE STYLE)
+           ================================================================== -->
+      <section class="content-section" id="resources">
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-headline">Videos & Used Resources</h2>
+          </div>
+          <div class="shelf-controls-group">
+            <div class="filter-pills-bar" id="filterPillsBar">
+              <button class="filter-tab active" data-filter="all">All Videos</button>
+              <button class="filter-tab" data-filter="claude">Claude Code</button>
+              <button class="filter-tab" data-filter="gpt">GPT & Astra</button>
+              <button class="filter-tab" data-filter="deepseek">DeepSeek</button>
+              <button class="filter-tab" data-filter="free">100% Free</button>
+            </div>
+
+            <!-- Admin Category Management Quick Button -->
+            <button type="button" class="btn-manage-categories creator-only-btn" id="btnManageCategories" title="Customize Category Folders" style="display: none;">
+              <i class="fa-solid fa-folder-gear"></i>
+              <span>Manage Folders</span>
+            </button>
+
+            <!-- View Mode Switcher: Shelf Carousel vs Full Grid -->
+            <div class="view-mode-toggle" id="viewModeToggle">
+              <button class="view-toggle-btn active" id="viewShelfBtn" title="Horizontal Carousel Shelf">
+                <i class="fa-solid fa-film"></i>
+                <span>Shelf</span>
+              </button>
+              <button class="view-toggle-btn" id="viewGridBtn" title="View All Videos in Grid">
+                <i class="fa-solid fa-grip"></i>
+                <span>All Videos (<span id="videoTotalCount">8</span>)</span>
+              </button>
+            </div>
+
+
+
+            <!-- Horizontal Carousel Navigation Buttons -->
+            <div class="carousel-arrow-group" id="carouselArrowGroup">
+              <button class="carousel-arrow-btn" id="carouselPrevBtn" aria-label="Previous Videos" title="Scroll Left">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="carousel-arrow-btn" id="carouselNextBtn" aria-label="Next Videos" title="Scroll Right">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+
+        <!-- Live Shelf Search Active Banner -->
+        <div class="search-active-bar" id="shelfSearchNotice" style="display: none;">
+          <span class="search-notice-text">
+            <i class="fa-solid fa-magnifying-glass" style="color: #6366f1;"></i>
+            Showing matches for "<strong id="shelfSearchQueryText"></strong>" (<span id="shelfSearchCount">0</span> found)
+          </span>
+          <button type="button" class="btn-clear-shelf-search" id="btnClearShelfSearch">
+            <i class="fa-solid fa-xmark"></i>
+            <span>Clear Search</span>
+          </button>
+        </div>
+
+        <!-- YouTube Video Cards Horizontal Shelf / Grid in Website's Aesthetic -->
+        <div class="video-shelf-wrapper" id="videoShelfWrapper">
+          <div class="video-shelf-container carousel-mode" id="videoShelfContainer">
+            <!-- Dynamic video cards rendered by app.js -->
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- Footer -->
+      <footer class="app-footer">
+        <div class="footer-content">
+          <p class="footer-quote">"Where Content Meets Cool" — <a href="https://youtube.com/@ahantech?si=lUA9TFK3VSPFafw8" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Ahan Tech (@ahantech)</a></p>
+          <div class="social-icons-row">
+            <a href="https://youtube.com/@ahantech?si=lUA9TFK3VSPFafw8" target="_blank" rel="noopener" class="social-circle" title="YouTube @ahantech"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://t.me/alpha2026start" target="_blank" rel="noopener" class="social-circle" title="Telegram @alpha2026start"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-circle" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-circle" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <!-- ==================================================================
+       INTERACTIVE MODALS
+       ================================================================== -->
+       
+  <!-- Video Player Preview Modal -->
+  <div class="modal-overlay" id="videoModalOverlay">
+    <div class="video-modal-box">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge">Video Preview</span>
+          <h2 class="modal-title" id="videoModalTitle">Claude Code & AI Agents Workflow</h2>
+        </div>
+        <button class="modal-close-btn" id="closeVideoModalBtn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Real Responsive YouTube Video Player Embed -->
+      <div class="video-player-container" id="videoPlayerContainer">
+        <iframe 
+          id="videoModalIframe" 
+          class="video-embed-iframe"
+          src="" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Modal Video Description Box -->
+      <div class="modal-video-desc-box" id="modalVideoDescBox"></div>
+
+      <!-- Modal Downloadable Resources Section -->
+      <div class="modal-resources-list" id="modalResourcesList"></div>
+
+      <div class="video-modal-actions">
+        <a href="https://youtube.com/@ahantech?si=lUA9TFK3VSPFafw8" target="_blank" rel="noopener" class="btn-yt-external">
+          <i class="fa-brands fa-youtube"></i>
+          <span>Watch on Ahan Tech</span>
+        </a>
+        <button class="btn-download-all-modal" id="downloadModalAssetsBtn">
+          <i class="fa-solid fa-file-pdf" style="color: #ef4444;"></i>
+          <span>Download PDF Guide</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Brand Collaboration / Sponsorship Modal -->
+  <div class="modal-overlay" id="collabModalOverlay">
+    <div class="auth-modal-box">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge">Sponsorship & Inquiries</span>
+          <h2 class="modal-title">Partner With Ahan Tech</h2>
+        </div>
+        <button class="modal-close-btn" id="closeCollabModalBtn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <p class="auth-subtitle">Feature your developer tool, AI product, or software on @ahantech.</p>
+      
+      <form class="auth-form" id="collabForm">
+        <div class="form-group">
+          <label for="brandName">Brand or Product Name <span style="color: #ef4444; font-weight: 800;">*</span></label>
+          <input type="text" id="brandName" placeholder="e.g. Acme AI Dev" required minlength="2" class="auth-input">
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Business Email <span style="color: #ef4444; font-weight: 800;">*</span></label>
+          <input type="email" id="contactEmail" placeholder="partner@brand.com" required class="auth-input">
+        </div>
+        <div class="form-group">
+          <label for="collabType">Sponsorship Format <span style="color: #ef4444; font-weight: 800;">*</span></label>
+          <select id="collabType" class="auth-input" required>
+            <option value="" disabled selected>-- Select a Sponsorship Format --</option>
+            <option value="dedicated">Dedicated YouTube Video Review (8-12 min)</option>
+            <option value="integrated">60-90s Video Integration & Resource Drop</option>
+            <option value="telegram">Alpha 2026 Telegram Community Pin & Blast</option>
+            <option value="affiliate">Custom Discount Promo Campaign</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="collabPitch">Campaign Pitch & Details <span style="color: #ef4444; font-weight: 800;">*</span></label>
+          <textarea id="collabPitch" rows="3" placeholder="Tell us about your tool, key features, and timeline..." required minlength="3" class="auth-input" style="height: auto; padding: 10px;"></textarea>
+        </div>
+        <div class="collab-dispatch-badge">
+          <i class="fa-brands fa-google" style="color: #ea4335;"></i>
+          <span>Directly opens Gmail New Message addressed to <strong>ahanghosh77@gmail.com</strong></span>
+        </div>
+        <button type="submit" class="auth-submit-btn" id="btnSubmitCollab" style="background: #ea4335; color: #ffffff; display: flex; align-items: center; justify-content: center; gap: 8px;">
+          <i class="fa-brands fa-google"></i> Open in Gmail & Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Collab Success & Direct Gmail Dispatch Modal -->
+  <div class="modal-overlay" id="collabSuccessModal">
+    <div class="auth-modal-box" style="text-align: center; max-width: 480px;">
+      <div style="width: 62px; height: 62px; background: #ecfdf5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; border: 2.5px solid #10b981; box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);">
+        <i class="fa-solid fa-check" style="color: #10b981; font-size: 30px;"></i>
+      </div>
+      <h3 style="font-family: var(--font-rounded-ui); font-size: 22px; font-weight: 800; color: #1e293b; margin-bottom: 6px;">Proposal Recorded!</h3>
+      <p style="font-size: 13.5px; color: #64748b; margin-bottom: 16px;">
+        Your proposal for <strong id="successBrandName" style="color: #4f46e5;">Brand</strong> has been saved to the Ahan Tech Creator Hub.
+      </p>
+
+      <div style="background: #f8fafc; border: 1.5px dashed #cbd5e1; border-radius: 12px; padding: 14px; text-align: left; margin-bottom: 18px; font-size: 13px;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+          <span style="color: #64748b;">Recipient:</span>
+          <strong style="color: #1e293b;">ahanghosh77@gmail.com</strong>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+          <span style="color: #64748b;">Format:</span>
+          <span id="successFormat" style="font-weight: 700; color: #d97706;">Dedicated Video</span>
+        </div>
+        <div style="margin-top: 8px; border-top: 1px solid #e2e8f0; padding-top: 8px;">
+          <span style="color: #64748b; font-size: 11.5px; font-weight: 700; text-transform: uppercase;">Message Pitch:</span>
+          <p style="color: #334155; font-size: 13px; margin-top: 4px; line-height: 1.4;" id="successPitchPreview">
+            "Pitch details..."
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="#" target="_blank" rel="noopener" id="btnOpenGmailDirect" class="auth-submit-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px; background: #ea4335; color: #ffffff;">
+          <i class="fa-brands fa-google"></i>
+          <span>Send Message via Gmail Directly</span>
+        </a>
+        <button type="button" class="btn-user-cancel" id="btnCloseSuccessModal" style="width: 100%; border: 1px solid #cbd5e1; padding: 10px; border-radius: 10px; font-weight: 600; cursor: pointer;">
+          Close & Return to Website
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Authentication Modal (Sign Up & Log In) -->
+  <div class="modal-overlay" id="authModalOverlay">
+    <div class="auth-card-modal">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge"><i class="fa-solid fa-id-badge"></i> Ahan Tech Community</span>
+          <h2 class="modal-title" id="authModalHeading">Join Ahan Tech</h2>
+        </div>
+        <button class="modal-close-btn" id="closeAuthModalBtn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Auth Tab Switcher -->
+      <div class="auth-tabs-bar" style="display: flex; gap: 0; margin-top: 14px; border-bottom: 2px solid #e2e8f0;">
+        <button type="button" class="auth-tab-switch active" id="authTabSignup" style="flex: 1; padding: 10px; border: none; background: none; font-family: var(--font-rounded-ui); font-size: 14px; font-weight: 700; color: #6366f1; border-bottom: 2.5px solid #6366f1; cursor: pointer; transition: all 0.2s ease;">Sign Up</button>
+        <button type="button" class="auth-tab-switch" id="authTabLogin" style="flex: 1; padding: 10px; border: none; background: none; font-family: var(--font-rounded-ui); font-size: 14px; font-weight: 600; color: #94a3b8; border-bottom: 2.5px solid transparent; cursor: pointer; transition: all 0.2s ease;">Log In</button>
+      </div>
+
+      <!-- Sign Up Pane -->
+      <div class="auth-tab-pane active" id="authPaneSignup" style="margin-top: 18px;">
+        <p class="auth-subtitle">Create your personal account to save tutorial videos, build your PDF developer library, and get direct resource drops.</p>
+
+        <!-- Fast Social Auth Buttons -->
+        <div class="auth-social-buttons-box">
+          <button type="button" class="btn-auth-social btn-social-google auth-trigger-google" title="Continue with Google">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.62z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span>Continue with Google</span>
+          </button>
+        </div>
+        <div class="auth-or-divider">
+          <span>or sign up with email</span>
+        </div>
+
+        <form id="signupForm" class="auth-form-card">
+          <div class="form-group">
+            <label for="signupName"><i class="fa-solid fa-user"></i> Full Name</label>
+            <input type="text" id="signupName" class="auth-input" placeholder="e.g. Alex Rivera" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="signupEmail"><i class="fa-solid fa-envelope"></i> Email Address</label>
+            <input type="email" id="signupEmail" class="auth-input" placeholder="alex@example.com" required autocomplete="email">
+          </div>
+          <div class="form-row-2">
+            <div class="form-group flex-1">
+              <label for="signupPassword"><i class="fa-solid fa-lock"></i> Password</label>
+              <input type="password" id="signupPassword" class="auth-input" placeholder="Min. 4 characters" required minlength="4" autocomplete="new-password">
+            </div>
+            <div class="form-group flex-1">
+              <label for="signupConfirmPassword"><i class="fa-solid fa-shield"></i> Confirm</label>
+              <input type="password" id="signupConfirmPassword" class="auth-input" placeholder="Repeat password" required minlength="4" autocomplete="new-password">
+            </div>
+          </div>
+
+          <button type="submit" class="auth-submit-btn" id="btnSubmitSignup">
+            <i class="fa-solid fa-user-check"></i> Create Account & Open User Panel
+          </button>
+        </form>
+
+        <p class="auth-switch-prompt" style="text-align: center; margin-top: 14px; font-size: 13px; color: #64748b;">
+          Already have an account? <a href="#" id="btnGoToLogin" style="color: #6366f1; font-weight: 700; text-decoration: none;">Sign In</a>
+        </p>
+      </div>
+
+      <!-- Log In Pane -->
+      <div class="auth-tab-pane" id="authPaneLogin" style="margin-top: 18px;">
+        <p class="auth-subtitle">Welcome back! Sign in to access your saved videos, tutorials, and resources.</p>
+
+        <!-- Social Login -->
+        <div class="auth-social-buttons-box">
+          <button type="button" class="btn-auth-social btn-social-google auth-trigger-google" title="Sign in with Google">
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.62z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span>Sign in with Google</span>
+          </button>
+        </div>
+        <div class="auth-or-divider">
+          <span>or sign in with email</span>
+        </div>
+
+        <form id="loginForm" class="auth-form-card">
+          <div class="form-group">
+            <label for="loginEmail"><i class="fa-solid fa-envelope"></i> Email Address</label>
+            <input type="email" id="loginEmail" class="auth-input" placeholder="yourname@gmail.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="loginPassword"><i class="fa-solid fa-lock"></i> Password</label>
+            <input type="password" id="loginPassword" class="auth-input" placeholder="Enter your password" required autocomplete="current-password">
+          </div>
+
+          <button type="submit" class="auth-submit-btn" id="btnSubmitLogin">
+            <i class="fa-solid fa-right-to-bracket"></i> Sign In & Open Dashboard
+          </button>
+        </form>
+
+
+        <p class="auth-switch-prompt" style="text-align: center; margin-top: 14px; font-size: 13px; color: #64748b;">
+          Don't have an account? <a href="#" id="btnGoToSignup" style="color: #6366f1; font-weight: 700; text-decoration: none;">Create one free</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- User Panel Dashboard Modal -->
+  <div class="modal-overlay" id="userPanelModalOverlay">
+    <div class="user-panel-box">
+      <!-- User Panel Modal Header -->
+      <div class="modal-header modal-header-right-close">
+        <button class="modal-close-btn" id="closeUserPanelBtn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- User Profile Header Card -->
+      <div class="user-profile-header-card">
+        <div class="user-avatar-circle" id="userPanelAvatar">AT</div>
+        <div class="user-profile-details">
+          <div class="user-name-row">
+            <h3 class="user-profile-name" id="userPanelName">Ahan Tech Member</h3>
+            <span class="user-role-badge" id="userPanelRoleBadge">Community Member</span>
+          </div>
+          <p class="user-profile-email" id="userPanelEmail">user@ahantech.com</p>
+          <div class="user-meta-line">
+            <span class="user-joined-date" id="userPanelJoined">Member since Sept 2026</span>
+          </div>
+        </div>
+        <div class="user-header-actions">
+          <button type="button" class="btn-user-logout" id="userPanelLogoutBtn" title="Sign out of account">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Log Out</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- User Panel Stats Ribbon -->
+      <div class="user-stats-ribbon">
+        <div class="user-stat-card">
+          <div class="user-stat-icon icon-video"><i class="fa-solid fa-bookmark"></i></div>
+          <div class="user-stat-meta">
+            <span class="user-stat-num" id="statBookmarksCount">0</span>
+            <span class="user-stat-label" id="statBookmarksLabel">Saved Videos</span>
+          </div>
+        </div>
+        <div class="user-stat-card">
+          <div class="user-stat-icon" style="background: #eef2ff; color: #6366f1;"><i class="fa-solid fa-play"></i></div>
+          <div class="user-stat-meta">
+            <span class="user-stat-num" id="statTotalVideosCount">0</span>
+            <span class="user-stat-label">Channel Videos</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Panel Navigation Tabs -->
+      <div class="user-tabs-nav">
+        <button type="button" class="user-tab-btn active" data-usertab="bookmarks">
+          <i class="fa-solid fa-bookmark"></i>
+          <span><span id="userTabVideosLabel">Saved Videos</span> (<span id="userTabBookmarksCount">0</span>)</span>
+        </button>
+        <button type="button" class="user-tab-btn" data-usertab="settings">
+          <i class="fa-solid fa-gear"></i>
+          <span>Account Settings</span>
+        </button>
+        <button type="button" class="user-tab-btn creator-only-tab" id="userTabAddVideoBtn" data-usertab="addvideo" style="display: none;">
+          <i class="fa-solid fa-cloud-arrow-up" style="color: #10b981;"></i>
+          <span>Upload Video</span>
+        </button>
+        <button type="button" class="user-tab-btn creator-only-tab" id="userTabInquiriesBtn" data-usertab="inquiries" style="display: none;">
+          <i class="fa-solid fa-briefcase" style="color: #f59e0b;"></i>
+          <span>Brand Proposals (<span id="userTabInquiriesCount">0</span>)</span>
+        </button>
+        <button type="button" class="user-tab-btn creator-only-tab" id="userTabCategoriesBtn" data-usertab="categories" style="display: none;">
+          <i class="fa-solid fa-folder-tree" style="color: #6366f1;"></i>
+          <span>Category Folders (<span id="userTabCategoriesCount">4</span>)</span>
+        </button>
+      </div>
+
+      <!-- User Tab Panes -->
+      <!-- Pane 1: Saved Videos -->
+      <div class="user-tab-pane active" id="userPane-bookmarks">
+        <div class="user-bookmarks-grid" id="userBookmarksContainer">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+
+      <!-- Pane 4: Settings -->
+      <div class="user-tab-pane" id="userPane-settings">
+        <form id="userSettingsForm" class="user-settings-card">
+          <h4 class="settings-section-title"><i class="fa-solid fa-envelope"></i> Account Information</h4>
+          <div class="form-group">
+            <label for="settingEmail">Email Address</label>
+            <input type="email" id="settingEmail" class="auth-input" readonly disabled style="opacity: 0.75;">
+          </div>
+          <h4 class="settings-section-title" style="margin-top: 16px;"><i class="fa-solid fa-key"></i> Update Password</h4>
+          <div class="form-row-2">
+            <div class="form-group flex-1">
+              <label for="settingNewPassword">New Password</label>
+              <input type="password" id="settingNewPassword" class="auth-input" placeholder="Leave empty to keep current">
+            </div>
+            <div class="form-group flex-1">
+              <label for="settingConfirmPassword">Confirm New Password</label>
+              <input type="password" id="settingConfirmPassword" class="auth-input" placeholder="Repeat new password">
+            </div>
+          </div>
+          <button type="submit" class="btn-save-settings">
+            <i class="fa-solid fa-floppy-disk"></i>
+            <span>Update Password</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Pane 5: Creator Studio - Upload Video (Exclusive to Ahan Ghosh) -->
+      <div class="user-tab-pane" id="userPane-addvideo">
+        <form id="creatorAddVideoForm" class="creator-video-form">
+          <div class="creator-form-badge">
+            <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+            <span>Creator Studio Mode • Exclusive to Ahan Ghosh (@ahantech)</span>
+          </div>
+
+          <div class="form-group">
+            <label for="creatorYtUrl"><i class="fa-brands fa-youtube" style="color: #ff0033;"></i> YouTube Video URL or Video ID</label>
+            <div class="creator-input-with-action">
+              <input type="text" id="creatorYtUrl" class="auth-input" placeholder="e.g. https://www.youtube.com/watch?v=... or youtu.be/... or 11-char ID" required autocomplete="off">
+              <button type="button" class="creator-paste-btn" id="btnCreatorPaste" title="Paste from clipboard">
+                <i class="fa-solid fa-paste"></i>
+                <span>Paste</span>
+              </button>
+            </div>
+            <span class="creator-input-hint">Paste any YouTube URL or Video ID. The HD thumbnail and preview auto-generate instantly.</span>
+          </div>
+
+          <!-- Dynamic Live Video Preview Card -->
+          <div class="creator-preview-box" id="creatorPreviewBox" style="display: none;">
+            <div class="creator-thumb-wrap">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3C/svg%3E" alt="Video Preview" id="creatorPreviewThumb" class="creator-thumb-preview" loading="lazy" decoding="async">
+              <span class="creator-preview-badge" id="creatorPreviewDuration">HD Video</span>
+            </div>
+            <div class="creator-preview-info">
+              <h5 class="creator-preview-title" id="creatorPreviewTitle">Video Title Preview</h5>
+              <p class="creator-preview-channel"><i class="fa-solid fa-circle-check" style="color: #10b981;"></i> Ahan Tech • Ready to publish</p>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group flex-2">
+              <label for="creatorVideoTitle"><i class="fa-solid fa-heading"></i> Video Title</label>
+              <input type="text" id="creatorVideoTitle" class="auth-input" placeholder="e.g. Claude Code & GPT 5.6 Workflow" required>
+            </div>
+            <div class="form-group flex-1">
+              <label for="creatorVideoCategory"><i class="fa-solid fa-tags"></i> Category</label>
+              <select id="creatorVideoCategory" class="auth-input creator-select">
+                <option value="claude gpt free">Claude + GPT Free</option>
+                <option value="claude free">Claude Free</option>
+                <option value="gpt free">GPT Free</option>
+                <option value="ai tools">AI Tools</option>
+                <option value="coding agents">Coding Agents</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="creatorVideoDesc"><i class="fa-solid fa-align-left"></i> Summary & Details</label>
+            <textarea id="creatorVideoDesc" class="auth-input creator-textarea" rows="3" placeholder="Explain what viewers learn, scripts used, and what files are included in this drop..." required></textarea>
+          </div>
+
+          <div class="creator-resources-fieldset">
+            <div class="creator-fieldset-header">
+              <i class="fa-solid fa-link" style="color: #6366f1;"></i>
+              <span>Attached Resources &amp; Links</span>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group flex-1">
+                <label for="creatorResourceTitle"><i class="fa-solid fa-tag"></i> Resource Link Title</label>
+                <input type="text" id="creatorResourceTitle" class="auth-input" placeholder="e.g. Free API Credits / GitHub Code">
+              </div>
+              <div class="form-group flex-1">
+                <label for="creatorResourceUrl"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #3b82f6;"></i> Resource Link URL</label>
+                <input type="url" id="creatorResourceUrl" class="auth-input" placeholder="e.g. https://github.com/... or https://...">
+              </div>
+            </div>
+
+            <!-- Optional PDF Upload Row for the Video -->
+            <div class="creator-video-pdf-row">
+              <input type="file" id="creatorVideoPdfInput" accept=".pdf,application/pdf" style="display: none;">
+              <div class="creator-pdf-btn-row">
+                <button type="button" class="btn-attach-pdf" id="btnAttachVideoPdf">
+                  <i class="fa-solid fa-file-pdf" style="color: #ef4444;"></i>
+                  <span id="btnAttachPdfLabel">Attach PDF Document (Optional)</span>
+                </button>
+                <div class="attached-pdf-chip" id="attachedVideoPdfChip" style="display: none;">
+                  <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
+                  <span class="chip-filename" id="attachedVideoPdfName">document.pdf</span>
+                  <span class="chip-filesize" id="attachedVideoPdfSize">(1.2 MB)</span>
+                  <button type="button" class="btn-chip-remove" id="btnRemoveVideoPdf" title="Remove PDF">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 6px;">
+              <label for="creatorTelegramLink"><i class="fa-brands fa-telegram" style="color: #0088cc;"></i> Telegram Channel VIP Link</label>
+              <input type="url" id="creatorTelegramLink" class="auth-input" value="https://t.me/alpha2026start">
+            </div>
+          </div>
+
+          <button type="submit" class="btn-creator-publish" id="btnCreatorPublish">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <span>Publish Video to Website Shelf</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Pane 6: Inquiries & Sponsorships (Exclusive to Ahan Ghosh) -->
+      <div class="user-tab-pane" id="userPane-inquiries">
+        <div class="inquiries-panel-header">
+          <div class="inquiries-header-text">
+            <h4 class="settings-section-title"><i class="fa-solid fa-briefcase" style="color: #f59e0b;"></i> Received Brand Sponsorship Inquiries</h4>
+            <p class="inquiries-header-sub">Synced in real-time with Supabase Cloud & emailed to <strong>ahanghosh77@gmail.com</strong>.</p>
+          </div>
+          <button type="button" class="btn-refresh-inquiries" id="btnRefreshInquiries" title="Refresh Inquiries">
+            <i class="fa-solid fa-rotate"></i>
+            <span>Refresh</span>
+          </button>
+        </div>
+        <div class="inquiries-activation-alert">
+          <i class="fa-solid fa-circle-info" style="color: #3b82f6; font-size: 18px; flex-shrink: 0; margin-top: 2px;"></i>
+          <div>
+            <strong style="color: #1e3a8a; font-size: 13.5px;">Missing the email notification in Gmail?</strong>
+            <p style="margin-top: 3px; font-size: 12.5px; color: #475569; line-height: 1.4;">
+              FormSubmit sends an initial <strong>"Activate Form"</strong> verification message on first use. Please check your <strong>Spam / Junk folder</strong> or <strong>Promotions tab</strong> for <em>"FormSubmit"</em> and click the green <strong>"Activate Form"</strong> button. Once clicked, all proposals land directly in your main inbox!
+            </p>
+          </div>
+        </div>
+        <div class="inquiries-list" id="inquiriesContainer">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+
+      <!-- Pane 7: Category Folders Manager (Exclusive to Admin) -->
+      <div class="user-tab-pane" id="userPane-categories">
+        <div class="creator-form-badge">
+          <i class="fa-solid fa-crown" style="color: #6366f1;"></i>
+          <span>Creator Studio • Manage Website Video Category Folders</span>
+        </div>
+        <p style="font-size: 13.5px; color: #64748b; margin-top: 6px; margin-bottom: 18px; line-height: 1.5;">
+          Customize the category filter folders displayed on the website shelf. You can add new folders, rename existing ones, or delete folders anytime.
+        </p>
+
+        <!-- Add Category Folder Form -->
+        <form id="addCategoryFolderForm" style="display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap;">
+          <input type="text" id="newCategoryFolderInput" class="auth-input flex-1" placeholder="e.g. Next.js, Python AI, Workflows..." required minlength="2">
+          <button type="submit" class="btn-vault-confirm-upload" style="margin: 0; white-space: nowrap;">
+            <i class="fa-solid fa-plus"></i>
+            <span>Add Folder</span>
+          </button>
+        </form>
+
+        <!-- Categories List Container -->
+        <div class="category-folders-list" id="categoryFoldersList">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid Menu Channel Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay">
+    <div class="drawer-panel" id="drawerPanel">
+      <div class="drawer-header">
+        <h3 class="drawer-title">Ahan Tech Hub</h3>
+        <button class="modal-close-btn" id="closeDrawerBtn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="#hero" class="drawer-link"><i class="fa-solid fa-house"></i> Home Overview</a></li>
+        <li><a href="#resources" class="drawer-link"><i class="fa-solid fa-folder-open"></i> Used Code & Scripts</a></li>
+        <li><a href="#userpanel" class="drawer-link" id="drawerUserLink"><i class="fa-solid fa-user-circle"></i> My User Panel</a></li>
+        <li><a href="#collab" class="drawer-link" id="drawerCollabLink"><i class="fa-solid fa-briefcase"></i> Sponsor Inquiries</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <p class="drawer-quote">"Where Content Meets Cool"</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Supabase Cloud Database Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- JavaScript App Logic (Cache-Busted v18.3 - Full GPU Speed Optimization) -->
+  <script src="app.js?v=18.3"></script>
+</body>
+</html>
