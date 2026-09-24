@@ -88,10 +88,6 @@
   <meta name="twitter:description" content="Where Content Meets Cool • Free AI coding scripts & developer vault on AhanYT.">
   <meta name="twitter:image" content="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.jpg">
   
-  <!-- Preconnect to Supabase CDN for instant hero image loading -->
-  <link rel="preconnect" href="https://ubyfoaiklfqdktqmunuo.supabase.co" crossorigin>
-  <link rel="dns-prefetch" href="https://ubyfoaiklfqdktqmunuo.supabase.co">
-
   <!-- Preload Critical LCP Hero Art (WebP = 10x smaller than JPG) -->
   <link rel="preload" as="image" href="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters_mobile.webp" type="image/webp" media="(max-width: 640px)" fetchpriority="high">
   <link rel="preload" as="image" href="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.webp" type="image/webp" media="(min-width: 641px)" fetchpriority="high">
@@ -108,9 +104,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
   
-  <!-- Main Stylesheet (Cache-Busted v18.5) -->
-  <link rel="preload" as="style" href="style.css?v=18.5">
-  <link rel="stylesheet" href="style.css?v=18.5">
+  <!-- Main Stylesheet (Cache-Busted v18.4 - Full GPU Speed Optimization) -->
+  <link rel="stylesheet" href="style.css?v=18.4">
 </head>
 <body>
 
@@ -141,7 +136,7 @@
           </button>
 
           <!-- Official Channel Quick Brand / Sub Count Badge -->
-          <a href="https://youtube.com/@ahantech?si=lUA9TFK3VSPFafw8" target="_blank" rel="noopener me" class="channel-brand-pill" title="Visit AhanYT (@ahantech) on YouTube" aria-label="Visit AhanYT (@ahantech) YouTube Channel">
+          <a href="https://youtube.com/@ahantech?si=lUA9TFK3VSPFafw8" target="_blank" rel="noopener me" class="channel-brand-pill" title="Visit AhanYT (@ahantech) on YouTube">
             <div class="brand-yt-icon-box" style="padding: 0; overflow: hidden; background: transparent; border: none; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
               <img src="favicon.png" alt="AhanYT Duck Logo" style="width: 38px; height: 38px; border-radius: 11px; object-fit: cover; display: block;">
             </div>
@@ -160,11 +155,11 @@
 
         <!-- Top Right: Navigation Capsule -->
         <nav class="nav-pill" id="mainNavPill">
-          <button type="button" class="nav-link active" id="navHomeLink" aria-label="Home Overview" title="Home Overview">
+          <button type="button" class="nav-link active" id="navHomeLink">
             <i class="fa-solid fa-house-chimney"></i>
             <span>Home</span>
           </button>
-          <a href="#resources" class="nav-link" id="navResourcesLink" aria-label="Videos and Vault Resources" title="Videos & Vault">
+          <a href="#resources" class="nav-link" id="navResourcesLink">
             <i class="fa-solid fa-play"></i>
             <span>Videos & Vault</span>
           </a>
@@ -172,7 +167,7 @@
           <span class="nav-separator" aria-hidden="true">|</span>
 
           <!-- Collab / Sponsor Pill Button -->
-          <button type="button" class="nav-auth-btn" id="collabBtn" title="Brand Deals & Collaborations" aria-label="Brand Deals & Collaborations">
+          <button type="button" class="nav-auth-btn" id="collabBtn" title="Brand Deals & Collaborations">
             <i class="fa-solid fa-handshake"></i>
             <span>Collab / Sponsor</span>
           </button>
@@ -202,7 +197,7 @@
               <source media="(max-width: 640px)" srcset="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters_mobile.webp" type="image/webp">
               <source srcset="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.webp" type="image/webp">
               <img 
-                src="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.webp" 
+                src="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.jpg" 
                 alt="Ahan Tech creators in stylish streetwear hoodies" 
                 class="hero-art-img"
                 id="heroArtImg"
@@ -287,7 +282,7 @@
 
               <span class="action-sub-separator" aria-hidden="true">|</span>
 
-              <a href="#resources" class="btn-explore" id="exploreBtn" aria-label="Explore Free Video Resources and Code Vault">
+              <a href="#resources" class="btn-explore" id="exploreBtn">
                 <span>EXPLORE</span>
                 <i class="fa-solid fa-arrow-down-long"></i>
               </a>
@@ -929,7 +924,7 @@
   <!-- Supabase Cloud Database Client (Deferred non-blocking) -->
   <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-  <!-- JavaScript App Logic (Deferred non-blocking, Cache-Busted v18.5) -->
-  <script defer src="app.js?v=18.5"></script>
+  <!-- JavaScript App Logic (Deferred non-blocking, Cache-Busted v18.4) -->
+  <script defer src="app.js?v=18.4"></script>
 </body>
 </html>
