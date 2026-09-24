@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agenticresourcediscovery.org/spec/catalog-v1.json",
+  "name": "AhanYT Developer Vault",
+  "description": "Developer platform offering free Claude Code scripts, AI API credits, developer tutorials, and PDF vault by AhanTech.",
+  "url": "https://ahanyt.vercel.app/",
+  "publisher": {
+    "name": "Ahan Ghosh (AhanTech)",
+    "url": "https://youtube.com/@ahantech"
+  },
+  "resources": [
+    {
+      "name": "AhanYT Home Overview",
+      "description": "Creator overview and channel hub.",
+      "url": "https://ahanyt.vercel.app/#hero",
+      "type": "website"
+    },
+    {
+      "name": "Developer Code & Script Vault",
+      "description": "Free AI coding scripts, PDF tutorials, and tools.",
+      "url": "https://ahanyt.vercel.app/#resources",
+      "type": "documentation"
+    }
+  ]
+}
