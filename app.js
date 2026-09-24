@@ -1186,7 +1186,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <button type="button" class="btn-bm-view" data-video-id="${video.id}">
                 <i class="fa-solid fa-folder-open"></i> Resources (${(video.resources || []).length})
               </button>
-              <button type="button" class="btn-bm-remove" data-video-id="${video.id}" title="Delete Video from Shelf & Cloud">
+              <button type="button" class="btn-bm-remove" data-video-id="${video.id}" title="Delete Video from Shelf & Cloud" aria-label="Delete Video from Shelf and Cloud">
                 <i class="fa-solid fa-trash"></i>
               </button>
             </div>
@@ -1216,7 +1216,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button type="button" class="btn-bm-view" data-video-id="${video.id}">
                   <i class="fa-solid fa-folder-open"></i> Resources (${(video.resources || []).length})
                 </button>
-                <button type="button" class="btn-bm-remove" data-video-id="${video.id}" title="${isBookmarked ? 'Remove from Saved' : 'Save to My Panel'}" style="${isBookmarked ? 'background: #fee2e2; color: #dc2626;' : 'background: #eff6ff; color: #2563eb;'}">
+                <button type="button" class="btn-bm-remove" data-video-id="${video.id}" title="${isBookmarked ? 'Remove from Saved' : 'Save to My Panel'}" aria-label="${isBookmarked ? 'Remove from Saved' : 'Save to My Panel'}" style="${isBookmarked ? 'background: #fee2e2; color: #dc2626;' : 'background: #eff6ff; color: #2563eb;'}">
                   <i class="${isBookmarked ? 'fa-solid' : 'fa-regular'} fa-bookmark"></i>
                 </button>
               </div>
@@ -2268,10 +2268,10 @@ Date: ${new Date().toLocaleString()}`;
           <div class="yt-thumb-box">
             <img src="${video.thumb}" alt="${escapeHtml(video.title)}" class="yt-thumb-img" loading="lazy" decoding="async" onerror="this.src='https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/yt_thumb_1.jpg'">
             <span class="yt-time-badge">${video.duration || '5:00'}</span>
-            <button type="button" class="btn-card-bookmark ${isBookmarked ? 'bookmarked' : ''}" data-video-id="${video.id}" title="${isBookmarked ? 'Remove from Saved' : 'Save to My User Panel'}">
+            <button type="button" class="btn-card-bookmark ${isBookmarked ? 'bookmarked' : ''}" data-video-id="${video.id}" title="${isBookmarked ? 'Remove from Saved' : 'Save to My User Panel'}" aria-label="${isBookmarked ? 'Remove from Saved' : 'Save to My User Panel'}">
               <i class="${isBookmarked ? 'fa-solid' : 'fa-regular'} fa-bookmark"></i>
             </button>
-            <button class="yt-play-hover-btn" title="Watch & Preview Resources">
+            <button class="yt-play-hover-btn" title="Watch & Preview Resources" aria-label="Watch video: ${escapeHtml(video.title)}">
               <i class="fa-solid fa-play"></i>
             </button>
           </div>

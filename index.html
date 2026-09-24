@@ -88,16 +88,24 @@
   <meta name="twitter:description" content="Where Content Meets Cool • Free AI coding scripts & developer vault on AhanYT.">
   <meta name="twitter:image" content="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.jpg">
   
-  <!-- Google Fonts: Plus Jakarta Sans (Clean, Modern Tech UI) -->
+  <!-- Preload Critical LCP Hero Art (Instant Paint for Mobile & Desktop) -->
+  <link rel="preload" as="image" href="assets/hero_characters_mobile.webp" type="image/webp" media="(max-width: 640px)" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero_characters.webp" type="image/webp" media="(min-width: 641px)" fetchpriority="high">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Non-blocking with font-display swap) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
   
-  <!-- Font Awesome 6 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Font Awesome 6 (Asynchronous non-render-blocking) -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
   
-  <!-- Main Stylesheet (Cache-Busted v18.3 - Full GPU Speed Optimization) -->
-  <link rel="stylesheet" href="style.css?v=18.3">
+  <!-- Main Stylesheet (Cache-Busted v18.4 - Full GPU Speed Optimization) -->
+  <link rel="stylesheet" href="style.css?v=18.4">
 </head>
 <body>
 
@@ -156,7 +164,7 @@
             <span>Videos & Vault</span>
           </a>
           
-          <span class="nav-separator">|</span>
+          <span class="nav-separator" aria-hidden="true">|</span>
 
           <!-- Collab / Sponsor Pill Button -->
           <button type="button" class="nav-auth-btn" id="collabBtn" title="Brand Deals & Collaborations">
@@ -185,14 +193,20 @@
         <!-- Left Side: Anime Streetwear Creator Duo -->
         <div class="characters-container">
           <div class="characters-crop-frame">
-            <img 
-              src="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.jpg" 
-              alt="Ahan Tech creators in stylish streetwear hoodies" 
-              class="hero-art-img"
-              id="heroArtImg"
-              decoding="async"
-              fetchpriority="high"
-            />
+            <picture>
+              <source media="(max-width: 640px)" srcset="assets/hero_characters_mobile.webp" type="image/webp">
+              <source srcset="assets/hero_characters.webp" type="image/webp">
+              <img 
+                src="assets/hero_characters.webp" 
+                alt="Ahan Tech creators in stylish streetwear hoodies" 
+                class="hero-art-img"
+                id="heroArtImg"
+                width="1080"
+                height="806"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </picture>
           </div>
           
           <!-- Floating Channel Badges -->
@@ -234,7 +248,7 @@
                 </button>
               </div>
 
-              <span class="action-separator">|</span>
+              <span class="action-separator" aria-hidden="true">|</span>
 
               <!-- Live Search Capsule Input -->
               <div class="search-capsule-wrapper">
@@ -266,7 +280,7 @@
                 <p class="action-headline">For Free Video<br>Resources</p>
               </div>
 
-              <span class="action-sub-separator">|</span>
+              <span class="action-sub-separator" aria-hidden="true">|</span>
 
               <a href="#resources" class="btn-explore" id="exploreBtn">
                 <span>EXPLORE</span>
@@ -356,10 +370,10 @@
           <p class="footer-quote">"Where Content Meets Cool" — <a href="https://youtube.com/@ahantech?si=lUA9TFK3VSPFafw8" target="_blank" rel="noopener me" style="color: inherit; text-decoration: underline;">AhanYT (Ahan Tech @ahantech)</a></p>
           <p style="font-size: 11.5px; opacity: 0.75; margin-top: 4px; margin-bottom: 12px;">Official Developer Vault, Code Scripts & AI Workflows • AhanYT</p>
           <div class="social-icons-row">
-            <a href="https://youtube.com/@ahantech?si=lUA9TFK3VSPFafw8" target="_blank" rel="noopener me" class="social-circle" title="YouTube @ahantech"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://t.me/alpha2026start" target="_blank" rel="noopener me" class="social-circle" title="Telegram @alpha2026start"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://x.com/ahantech" target="_blank" rel="noopener me" class="social-circle" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://github.com/ahanghosh77" target="_blank" rel="noopener me" class="social-circle" title="GitHub @ahanghosh77"><i class="fa-brands fa-github"></i></a>
+            <a href="https://youtube.com/@ahantech?si=lUA9TFK3VSPFafw8" target="_blank" rel="noopener me" class="social-circle" title="YouTube @ahantech" aria-label="Visit AhanTech YouTube Channel"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://t.me/alpha2026start" target="_blank" rel="noopener me" class="social-circle" title="Telegram @alpha2026start" aria-label="Join Alpha 2026 Community on Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://x.com/ahantech" target="_blank" rel="noopener me" class="social-circle" title="Twitter / X" aria-label="Follow AhanTech on Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://github.com/ahanghosh77" target="_blank" rel="noopener me" class="social-circle" title="GitHub @ahanghosh77" aria-label="Explore Ahan Ghosh GitHub Profile"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
       </footer>
@@ -521,7 +535,7 @@
       <!-- Auth Tab Switcher -->
       <div class="auth-tabs-bar" style="display: flex; gap: 0; margin-top: 14px; border-bottom: 2px solid #e2e8f0;">
         <button type="button" class="auth-tab-switch active" id="authTabSignup" style="flex: 1; padding: 10px; border: none; background: none; font-family: var(--font-rounded-ui); font-size: 14px; font-weight: 700; color: #6366f1; border-bottom: 2.5px solid #6366f1; cursor: pointer; transition: all 0.2s ease;">Sign Up</button>
-        <button type="button" class="auth-tab-switch" id="authTabLogin" style="flex: 1; padding: 10px; border: none; background: none; font-family: var(--font-rounded-ui); font-size: 14px; font-weight: 600; color: #94a3b8; border-bottom: 2.5px solid transparent; cursor: pointer; transition: all 0.2s ease;">Log In</button>
+        <button type="button" class="auth-tab-switch" id="authTabLogin" style="flex: 1; padding: 10px; border: none; background: none; font-family: var(--font-rounded-ui); font-size: 14px; font-weight: 600; color: #475569; border-bottom: 2.5px solid transparent; cursor: pointer; transition: all 0.2s ease;">Log In</button>
       </div>
 
       <!-- Sign Up Pane -->
@@ -808,7 +822,7 @@
                   <i class="fa-solid fa-circle-check" style="color: #10b981;"></i>
                   <span class="chip-filename" id="attachedVideoPdfName">document.pdf</span>
                   <span class="chip-filesize" id="attachedVideoPdfSize">(1.2 MB)</span>
-                  <button type="button" class="btn-chip-remove" id="btnRemoveVideoPdf" title="Remove PDF">
+                  <button type="button" class="btn-chip-remove" id="btnRemoveVideoPdf" title="Remove PDF" aria-label="Remove attached PDF">
                     <i class="fa-solid fa-xmark"></i>
                   </button>
                 </div>
@@ -886,7 +900,7 @@
     <div class="drawer-panel" id="drawerPanel">
       <div class="drawer-header">
         <h3 class="drawer-title">Ahan Tech Hub</h3>
-        <button class="modal-close-btn" id="closeDrawerBtn">
+        <button class="modal-close-btn" id="closeDrawerBtn" aria-label="Close navigation drawer">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -907,10 +921,10 @@
   <!-- Toast Notification Container -->
   <div class="toast-container" id="toastContainer"></div>
 
-  <!-- Supabase Cloud Database Client -->
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- Supabase Cloud Database Client (Deferred non-blocking) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-  <!-- JavaScript App Logic (Cache-Busted v18.3 - Full GPU Speed Optimization) -->
-  <script src="app.js?v=18.3"></script>
+  <!-- JavaScript App Logic (Deferred non-blocking, Cache-Busted v18.4) -->
+  <script defer src="app.js?v=18.4"></script>
 </body>
 </html>
