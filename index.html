@@ -88,9 +88,8 @@
   <meta name="twitter:description" content="Where Content Meets Cool • Free AI coding scripts & developer vault on AhanYT.">
   <meta name="twitter:image" content="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.jpg">
   
-  <!-- Preload Critical LCP Hero Art (Instant Paint for Mobile & Desktop) -->
-  <link rel="preload" as="image" href="assets/hero_characters_mobile.webp" type="image/webp" media="(max-width: 640px)" fetchpriority="high">
-  <link rel="preload" as="image" href="assets/hero_characters.webp" type="image/webp" media="(min-width: 641px)" fetchpriority="high">
+  <!-- Preload Critical LCP Hero Art -->
+  <link rel="preload" as="image" href="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.jpg" fetchpriority="high">
 
   <!-- Google Fonts: Plus Jakarta Sans (Non-blocking with font-display swap) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -193,20 +192,16 @@
         <!-- Left Side: Anime Streetwear Creator Duo -->
         <div class="characters-container">
           <div class="characters-crop-frame">
-            <picture>
-              <source media="(max-width: 640px)" srcset="assets/hero_characters_mobile.webp" type="image/webp">
-              <source srcset="assets/hero_characters.webp" type="image/webp">
-              <img 
-                src="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.jpg" 
-                alt="Ahan Tech creators in stylish streetwear hoodies" 
-                class="hero-art-img"
-                id="heroArtImg"
-                width="1080"
-                height="806"
-                decoding="async"
-                fetchpriority="high"
-              />
-            </picture>
+            <img 
+              src="https://ubyfoaiklfqdktqmunuo.supabase.co/storage/v1/object/public/pdfs/hero_characters.jpg" 
+              alt="Ahan Tech creators in stylish streetwear hoodies" 
+              class="hero-art-img"
+              id="heroArtImg"
+              width="1080"
+              height="806"
+              decoding="async"
+              fetchpriority="high"
+            />
           </div>
           
           <!-- Floating Channel Badges -->
